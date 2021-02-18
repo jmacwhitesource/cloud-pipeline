@@ -133,7 +133,8 @@ public class SearchRequestBuilder {
     }
 
     private QueryBuilder getBasicQuery(final ElasticSearchRequest searchRequest) {
-        QueryStringQueryBuilder query = QueryBuilders.queryStringQuery(searchRequest.getQuery());
+        QueryStringQueryBuilder query = QueryBuilders
+            .queryStringQuery(escapeUnsupportedSpecialCharacters(searchRequest.getQuery()));
         ListUtils.emptyIfNull(preferenceManager.getPreference(SystemPreferences.SEARCH_ELASTIC_SEARCH_FIELDS))
                 .forEach(query::field);
         return query;
@@ -182,5 +183,18 @@ public class SearchRequestBuilder {
                 .map(type -> Optional.ofNullable(typeIndexPrefixes.get(type))
                         .orElseThrow(() -> new SearchException("Missing index name for type: " + type)))
                 .toArray(String[]::new);
+    }
+
+    private String escapeUnsupportedSpecialCharacters(final String string) {
+        final StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < string.length(); i++) {
+            final char c = string.charAt(i);
+            if (c == '\\' || c == '!' || c == ':' || c == '^' || c == '[' || c == ']' || c == '{' || c == '}'
+                || c == '?' || c == '&' || c == '/') {
+                sb.append('\\');
+            }
+            sb.append(c);
+        }
+        return sb.toString();
     }
 }
