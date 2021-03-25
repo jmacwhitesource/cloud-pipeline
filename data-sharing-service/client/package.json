@@ -3,7 +3,7 @@
   "version": "0.12.0",
   "private": true,
   "dependencies": {
-    "ansi_up": "^2.0.2",
+    "ansi_up": "^5.0.0",
     "antd": "2.13.11",
     "aws-sdk": "^2.282.1",
     "history": "^3.3.0",
