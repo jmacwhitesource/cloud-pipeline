@@ -73,7 +73,7 @@
     "postcss-reporter": "^3.0.0",
     "postcss-use": "^2.3.0",
     "promise": "7.1.1",
-    "react-dev-utils": "^0.5.2",
+    "react-dev-utils": "^11.0.0",
     "style-loader": "0.14.1",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",

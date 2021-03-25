@@ -111,7 +111,7 @@
     "postcss-reporter": "^6.0.1",
     "postcss-safe-parser": "4.0.1",
     "promise": "^8.0.2",
-    "react-dev-utils": "^7.0.3",
+    "react-dev-utils": "^11.0.4",
     "style-loader": "0.14.1",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
