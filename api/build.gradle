@@ -196,7 +196,7 @@ dependencies {
     compile group: "com.microsoft.azure", name: "azure-storage-blob", version: "11.0.0"
 
     // Retrofit
-    compile group: "com.squareup.retrofit2", name: "retrofit", version: "2.3.0"
+    compile group: "com.squareup.retrofit2", name: "retrofit", version: "2.5.0"
     compile group: "com.squareup.retrofit2", name: "converter-jackson", version: "2.3.0"
     compile group: "com.squareup.okhttp3", name: "okhttp", version: "3.9.1"
     compile group: "com.fasterxml.jackson.datatype", name: "jackson-datatype-jsr310", version: "2.9.6"
