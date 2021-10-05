@@ -35,7 +35,7 @@ dependencies {
 
     compile group: 'com.google.code.findbugs', name: 'annotations', version: '3.0.1'
 
-    compile group: 'com.google.guava', name: 'guava', version: '26.0-jre'
+    compile group: 'com.google.guava', name: 'guava', version: '27.0-android'
     compile group: 'org.apache.commons', name: 'commons-compress', version: '1.18'
     compile group: 'org.owasp', name: 'dependency-check-core', version: '3.3.2'
 
