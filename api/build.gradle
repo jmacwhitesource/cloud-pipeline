@@ -123,7 +123,7 @@ dependencies {
     compile "com.google.cloud:google-cloud-storage:1.64.0"
 
     testCompile group: "org.springframework.security", name: "spring-security-test", version: "4.2.2.RELEASE"
-    testCompile group: "com.github.tomakehurst", name: "wiremock", version: "2.14.0"
+    testCompile group: "com.github.tomakehurst", name: "wiremock", version: "2.16.0"
 
     //DB
     compile("org.springframework:spring-jdbc")
