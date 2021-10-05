@@ -54,7 +54,7 @@ dependencies {
 
     // DB
     compile group: "com.h2database",    name: "h2",     version: "1.4.197"
-    compile group: "com.mchange",       name: "c3p0",   version: "0.9.5.2"
+    compile group: "com.mchange",       name: "c3p0",   version: "0.9.5.4"
 
     // Swagger
     compile group: "io.springfox", name: "springfox-swagger2",      version: swaggerVersion
